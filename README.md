@@ -7,6 +7,6 @@ Compiles Lua src to a nested Lua function. Used in sandboxed environment where l
 Divided up in a parser and a compiler. The parser outputs a parse tree and the compiler creates a nested Lua function of the parse tree. The parser can be parsed by the parser and the parse-tree then compiled by the compiler thus reducing the code foot print.
  
 ```
-Fibonacci (native):0.021383s
-Fibonacci (emulated):0.802348s
+Fibonacci(20) (native):0.021383s
+Fibonacci(20) (emulated):0.802348s
 Factor slower:37.522704952532
