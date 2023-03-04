@@ -1,4 +1,4 @@
-# LuaLua
+# LuaLua simple
 Lua implemented in vanilla Lua without any libraries.
 
 Compiles Lua src to a nested Lua function. Used in sandboxed environment where loadstring, metatables, and coroutines are not allowed.
