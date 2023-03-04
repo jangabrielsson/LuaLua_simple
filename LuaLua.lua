@@ -10,11 +10,9 @@
      MIT License
 --]]
 
-if dofile and not _EMULATED then _EMULATED={name="Daemon",id=199, maxtime=2} dofile("HC2.lua") end
+if not _EMULATED and dofile then dofile("lib/json.lua") end -- sorry, you need a json lib from somewhere
+function table.maxn(t) local n= 0; for _,_ in ipairs(t) do n=n+1 end return n end
 
-if _EMULATED then _System.speed(true) end
-
-if not _EMULATED and dofile then dofile("json.lua") end
 --[[
 chunk ::= block
 block ::= {stat} [retstat]
